@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+	<html lang="zxx" class="no-js">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+		<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+	
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+		<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+		<link rel="shortcut icon" href="img/fav.png">
+		<!-- Author Meta -->
+		<meta name="author" content="CodePixar">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>SISPENASI</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/jquery.DonutWidget.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+			<link rel="stylesheet" href="css/style.css">
+			
+			
+		</head>
+		<body>
+
+			<!-- Start Header Area -->
+			<header class="default-header">
+				<nav class="navbar navbar-expand-lg  navbar-light">
+					<div class="container">
+						  <a class="navbar-brand" href="index.html">
+						  	<img src="img/logo.jpg" alt="image" height="43" width="45">
+						  </a>
+						  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						    <span class="navbar-toggler-icon"></span>
+						  </button>
+
+						  <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
+						    <ul class="navbar-nav">
+								<li><a href="index.php">Beranda</a></li>
+								<li><a href="../login/signin.php">Masuk</a></li>
+								<li><a href="#contact">Kontak</a></li>
+								
+							   <!-- Dropdown -->
+							    <li class="dropdown">
+							      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							        Pelayanan
+							      </a>
+							      <div class="dropdown-menu">
+								  <a class="dropdown-item" href="#project">Kegiatan Dokumentasi</a>
+									<a class="dropdown-item" href="umum.html">Pelayanan Umum</a>
+									<a class="dropdown-item" href="pepemas.html">Pelayanan Pemberdayaan Masyarakat</a>
+									<a class="dropdown-item" href="pelkeban.html">Pelayanan Ketentraman dan Ketertiban</a>
+								  </div>
+								</li>
+								<li class="dropdown">
+								  <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+							        Data Wilayah
+							      </a>
+								  <div class="dropdown-menu">
+									<a class="dropdown-item" href="geografi.html">Kondisi Geografi</a>
+									<a class="dropdown-item" href="infra.html">Infrastruktur</a>
+									<a class="dropdown-item" href="covid.html">Info Covid-19</a>
+							      </div>
+								</li>	
+								<li class="dropdown">
+									<a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+									  Tentang Kami
+									</a>
+									<div class="dropdown-menu">
+									  <a class="dropdown-item" href="visi.html">Visi Dan Misi</a>
+									  <a class="dropdown-item" href="#contact">Hubungi</a>
+									  <a class="dropdown-item" href="tugasfungsi.html">Tugas Fungsi</a>
+									</div>
+								  </li>	
+								  
+								  			
+						    </ul>
+						  </div>						
+					</div>
+				</nav>
+			</header>
+	
+	<title>Usaha</title>
+
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
+
+
+	<style>
+		html, body {
+			height: 100%;
+			margin: 0;
+		}
+		#map {
+			width: 600px;
+			height: 450px;
+		}
+	</style>
+
+<div id='map'></div>
+
+<script>
+	var cities = L.layerGroup();
+
+	L.marker([-6.208725, 106.733784]).bindPopup('This is Littleton, CO.').addTo(cities),
+    L.marker([-6.198899, 106.732872]).bindPopup('This is Denver, CO.1').addTo(cities),
+    L.marker([-6.210995, 106.737663]).bindPopup('Lawson Meruya Selatan').addTo(cities),
+    L.marker([-6.209325, 106.737822]).bindPopup('Alfamart Meruya Selatan 2').addTo(cities),
+    L.marker([-6.212557, 106.737631]).bindPopup('METRONTEN-Meruya').addTo(cities),
+    L.marker([-6.214758, 106.736702]).bindPopup('Indomaret Saaba Raya').addTo(cities),
+    L.marker([-6.214990, 106.736616]).bindPopup('Alfamart Saaba Raya').addTo(cities),
+    L.marker([-6.209683, 106.737731]).bindPopup('Bywi Futsal').addTo(cities),
+    L.marker([-6.213272, 106.737770]).bindPopup('Aik Kopi').addTo(cities),
+    L.marker([-6.210107, 106.737662]).bindPopup('Indomaret Meruya Selatan').addTo(cities),
+    L.marker([-6.211131, 106.737889]).bindPopup('Alfamart Meruya Selatan 5').addTo(cities),
+	L.marker([-6.214531, 106.737631]).bindPopup('Kedai Kopi Bubuk Jakarta').addTo(cities)
+	L.marker([-6.214046, 106.737875]).bindPopup('Baso Aci Akang Meruya').addTo(cities)
+	L.marker([-6.214738, 106.737563]).bindPopup('DBesto Meruya').addTo(cities)
+	L.marker([-6.214842, 106.736195]).bindPopup('DIHONJE.IN').addTo(cities)
+	L.marker([-6.206183, 106.738437]).bindPopup('Baskopt Cofffetea').addTo(cities)
+	L.marker([-6.208574, 106.730525]).bindPopup('Alfamart Kavling DKI').addTo(cities)
+	L.marker([-6.208192, 106.730051]).bindPopup('Bakmi Bangka Kavling DKI').addTo(cities)
+	L.marker([-6.210954, 106.729013]).bindPopup('Pecel Lele Gilar-Gilar').addTo(cities)
+	L.marker([-6.210426, 106.733959]).bindPopup('Mama John Bakery').addTo(cities)
+
+
+	var mbAttr = 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		mbUrl = 'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+
+	var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox/light-v9', tileSize: 512, zoomOffset: -1, attribution: mbAttr}),
+		streets  = L.tileLayer(mbUrl, {id: 'mapbox/streets-v11', tileSize: 512, zoomOffset: -1, attribution: mbAttr});
+
+	var map = L.map('map', {
+		center: [-6.208725, 106.733784],
+		zoom: 13,
+		layers: [grayscale, cities]
+	});
+
+	var baseLayers = {
+		"Grayscale": grayscale,
+		"Streets": streets
+	};
+
+	var overlays = {
+		"Cities": cities
+	};
+
+	L.control.layers(baseLayers, overlays).addTo(map);
+</script>
+
+
+
+</body>
+</html>
